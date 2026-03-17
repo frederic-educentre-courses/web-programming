@@ -90,9 +90,60 @@
 						<p>An HTML page is structured using various elements such as <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>. These elements help organize content and improve accessibility.</p>
 					</section>
 					<section>
+						<h2>Example of HTML Structure</h2>
+						<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;!-- the head section is for metadata and links --&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;!-- the body section is for content that will be displayed on the page --&gt;
+&lt;body&gt;
+	&lt;!-- the header section typically contains the website's title and navigation --&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;/header&gt;
+	&lt;!-- the nav section contains links to different parts of the website --&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+	&lt;!-- the main section contains the primary content of the page --&gt;
+    &lt;main&gt;
+        &lt;p&gt;This is the main content of the page.&lt;/p&gt;
+    &lt;/main&gt;
+	&lt;!-- the footer section typically contains copyright information and links to legal pages --&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2023 My Website. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+					</section>
+					<section>
 						<h2>2D. HTML: concept of tags</h2>
 						<p>HTML tags are the building blocks of an HTML document. They are used to define the structure and content of a web page.</p>
 						<p>Tags are typically enclosed in angle brackets, such as <code>&lt;h1&gt;</code> for a heading or <code>&lt;p&gt;</code> for a paragraph. Some tags have attributes that provide additional information about the element, such as <code>&lt;a href="https://example.com"&gt;</code> for a hyperlink.</p>
+					</section>
+					<section>
+						<h2>Example of HTML Tags</h2>
+						<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;!-- h1 is a heading tag, and p is a paragraph tag --&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+	&lt;!-- p is a paragraph tag that contains text content --&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 					</section>
 					<section>
 						<h2>2E. CSS: presentation</h2>
@@ -104,12 +155,58 @@
 						<p>CSS selectors are used to target HTML elements and apply styles to them. Common selector types include element selectors (e.g., <code>p</code>), class selectors (e.g., <code>.class-name</code>), and ID selectors (e.g., <code>#id-name</code>).</p>
 					</section>
 					<section>
+						<h2>Example of CSS Selectors</h2>
+						<pre><code>/* element selector */
+p {
+    color: blue;
+}
+
+/* class selector */
+.class-name {
+    font-weight: bold;
+}
+
+/* ID selector */
+#id-name {
+    background-color: yellow;
+}</code></pre>
+					</section>
+					<section>
 						<h2>2G. CSS: properties</h2>
 						<p>CSS properties define the specific styles to be applied to elements. Examples include <code>color</code>, <code>font-size</code>, <code>margin</code>, and <code>padding</code>.</p>
 					</section>
 					<section>
+						<h2>Example of CSS Properties</h2>
+						<pre><code>p {
+	color: blue; /* sets the text color to blue */
+	font-size: 16px; /* sets the font size to 16 pixels */
+	margin: 10px; /* sets the margin around the element to 10 pixels */
+	padding: 5px; /* sets the padding inside the element to 5 pixels */
+}</code></pre>
+					</section>
+					<section>
 						<h2>2H. CSS: responsive design</h2>
 						<p>Responsive design is an approach to web design that ensures a website looks and functions well on various devices and screen sizes. It typically involves using flexible layouts, media queries, and scalable images to create a seamless user experience across different platforms.</p>
+					</section>
+					<section>
+						<h2>Example of Responsive Design with CSS</h2>
+						<pre><code>/* Base styles for all devices */
+body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	width: 100%;
+	padding: 20px;
+}
+
+/* Styles for screens larger than 600px */
+@media (min-width: 600px) {
+	.container {
+		width: 80%;
+		margin: 0 auto;
+	}
+}</code></pre>
 					</section>
 				</section>
 				<section>
